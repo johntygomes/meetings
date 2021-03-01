@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>
+    Main Files
+    </title>
+</head>
+
+<body>
+    <form action="submitMeetingData" method="POST">
+        {% csrf_token %}
+        <input id="meetingSubject" name="meetingSubject" placeholder="Meeting Subject">
+        <label for="meetingDate">Select a Date:</label>
+        <input type="date" id="meetingDate" name="meetingDate">
+        <label for="meetingTime">Select a time:</label>
+        <input type="time" id="meetingTime" name="meetingTime">
+        <button type="submit">Submit</button>
+
+
+
+    </form>
+</body>
+
+</html>

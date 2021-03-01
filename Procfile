@@ -1,0 +1,1 @@
+web: gunicorn uspharmacy.wsgi --log-file -

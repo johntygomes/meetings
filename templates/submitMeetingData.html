@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>
+    Main Files
+    </title>
+</head>
+
+<body>
+    Meeting Data Submitted<br>
+    Meeting ID:: <b>{{meeting.id}}</b><br>
+    Meeting Scheduled At Date::<b>{{meeting.meetingDate}}</b><br>
+    Meeting Scheduled At Time::<b>{{meeting.meetingTime}}</b>
+    <form action="submitParticipants" method="POST">
+        {% csrf_token %}
+        <hr>
+        <input type="text" name="employeeName1" id="employeeName1" placeholder="First Paricipant Name">
+        <input type="email" name="employeeEmail1" id="employeeName1" placeholder="First Paricipant Email">
+        <hr>
+        <input type="text" name="employeeName2" id="employeeName2" placeholder="Second Paricipant Name">
+        <input type="email" name="employeeEmail2" id="employeeName2" placeholder="Second Paricipant Email">
+        <hr>
+        <input type="text" name="employeeName3" id="employeeName3" placeholder="Third Paricipant Name">
+        <input type="email" name="employeeEmail3" id="employeeName3" placeholder="Third Paricipant Email">
+        <hr>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
