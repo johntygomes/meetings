@@ -14,7 +14,7 @@ def home(request):
 currentMeetingId=0
 subject=''
 body=''
-fromaddr = "natgomes7@gmail.com"
+fromaddr = "YOUR_EMAIL"
 
 def submitMeetingData(request):
     global currentMeetingId
@@ -49,7 +49,7 @@ def submitParticipants(request):
         msg.attach(MIMEText(body, 'plain'))
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login(fromaddr, "soaringeagles")
+        s.login(fromaddr, "YOUR_PASSWORD")
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
         s.quit()
@@ -69,7 +69,7 @@ def submitParticipants(request):
         msg.attach(MIMEText(body, 'plain'))
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login(fromaddr, "soaringeagles")
+        s.login(fromaddr, "YOUR_PASSWORD")
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
         s.quit()
@@ -88,7 +88,7 @@ def submitParticipants(request):
         msg.attach(MIMEText(body, 'plain'))
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login(fromaddr, "soaringeagles")
+        s.login(fromaddr, "YOUR_PASSWORD")
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
         s.quit()
