@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '!mfh8&stth&545$p0og8+q76qo(^e4if_ppn5xdt0&f%be1*cw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['meetingmanagementjohnty.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
